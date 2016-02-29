@@ -7,12 +7,9 @@ export default Ember.Route.extend({
 
   actions : {
     submitTicket(params) {
-      // var self = this;
       var newTicket = this.store.createRecord('ticket', params);
       newTicket.save();
-        // .then(function() {
-        // self.refresh();
-      // });
+      this.transitionTo('queue');
     },
   }
 });
