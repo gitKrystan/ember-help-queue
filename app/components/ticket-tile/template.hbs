@@ -1,4 +1,16 @@
 <div class="row">
+  {{#if isCurrentTicket}}
+    <button class='btn btn-default' {{action 'closeTicket' currentTicket}}>Figured It Out</button>
+  {{else}}
+    {{#if teacherView}}
+      <button class='btn btn-default' {{action 'closeTicket' ticket}}>Close Ticket</button>
+    {{/if}}
+  {{/if}}
+  <div class="ticket-timestamp">
+    <p>{{moment-from-now ticket.openedAt interval=15000}}</p>
+  </div>
+</div>
+<div class="row">
   <div class="ticket-name">
     <h1>{{ticket.name}}</h1>
   </div>

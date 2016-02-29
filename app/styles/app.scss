@@ -6,11 +6,19 @@
 
 .ticket-seat {
   @include make-md-column(1);
+  text-align: right;
 }
 
 .ticket-issue {
-  @include make-md-column(12);
+  @include make-md-column(9);
   font-style: italic;
+}
+
+.ticket-timestamp {
+  @include make-md-column(3);
+  @include make-md-column-offset(9);
+  font-style: italic;
+  text-align: right;
 }
 
 .is-current-ticket {
