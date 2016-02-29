@@ -1,0 +1,15 @@
+<form {{action 'submitTicket' on='submit'}}>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input value=name id="name" placeholder="Please enter your name" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="seat">Seat</label>
+    {{input value=seat id="seat" placeholder="Please enter your location" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="issue">Issue</label>
+    {{textarea value=issue id="issue" placeholder="Please give a brief description of the issue you are having" class="form-control" rows="6"}}
+  </div>
+  <button type="submit" class="btn btn-default" disabled={{submitIsDisabled}}>Help!</button>
+</form>

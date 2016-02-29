@@ -1,9 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  student: DS.attr(),
+  name: DS.attr(),
   seat: DS.attr(),
   issue: DS.attr(),
-  timestamp: DS.attr(),
+  openedAt: DS.attr(),
+  closedAt: DS.attr(),
   isOpen: DS.attr()
 });
