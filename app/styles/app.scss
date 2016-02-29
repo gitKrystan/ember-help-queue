@@ -1,14 +1,18 @@
 @import 'bootstrap';
 
-.ticketName {
+.ticket-name {
   @include make-md-column(11);
 }
 
-.ticketSeat {
+.ticket-seat {
   @include make-md-column(1);
 }
 
-.ticketIssue {
+.ticket-issue {
   @include make-md-column(12);
   font-style: italic;
+}
+
+.is-current-ticket {
+  background-color: pink;
 }
