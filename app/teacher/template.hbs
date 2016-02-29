@@ -1,3 +1,6 @@
+<h1>TEACHER STATS</h1>
+{{teacher-stats openTickets=model.openTickets closedTickets=model.closedTickets}}
+
 <h1>TEACHER QUEUE</h1>
 
-{{ticket-list tickets=model teacherView=true closeTicket='closeTicket'}}
+{{ticket-list tickets=model.openTickets teacherView=true closeTicket='closeTicket'}}

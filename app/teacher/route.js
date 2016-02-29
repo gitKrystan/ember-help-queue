@@ -2,10 +2,17 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.query('ticket', {
-      orderBy: 'isOpen',
-      equalTo: true
-    });
+    return Ember.RSVP.hash({
+      openTickets: this.store.query('ticket', {
+        orderBy: 'isOpen',
+        equalTo: true
+      }),
+
+      closedTickets: this.store.query('ticket', {
+        orderBy: 'isOpen',
+        equalTo: false
+      })
+    })
   },
 
   actions: {
