@@ -6,9 +6,9 @@ export default Ember.Component.extend({
   sortedTickets: Ember.computed.sort('tickets', 'sortProperties'),
 
   actions: {
-    closeTicket(currentTicket) {
-      console.log("In the ticket list, current: " + currentTicket);
-      this.sendAction('closeTicket', currentTicket);
+    closeTicket(ticket) {
+      console.log("In the ticket list, current: " + ticket);
+      this.sendAction('closeTicket', ticket);
     }
   }
 });

@@ -2,12 +2,18 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('ticket');
+    return this.store.query('ticket', {
+      orderBy: 'isOpen',
+      equalTo: true
+    });
   },
 
   actions: {
     closeTicket(ticket) {
-      ticket.destroyRecord();
+      ticket.set('closedAt', Date.now());
+      ticket.set('closedBy', 'teacher');
+      ticket.set('isOpen', false);
+      ticket.save();
     }
   }
 });

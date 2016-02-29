@@ -15,7 +15,8 @@ export default Ember.Component.extend({
         issue: this.get('issue'),
         openedAt: Date.now(),
         closedAt: null,
-        isOpen: true
+        isOpen: true,
+        closedBy: null
       };
       this.set('name'),
       this.set('seat'),

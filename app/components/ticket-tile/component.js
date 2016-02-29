@@ -11,9 +11,9 @@ export default Ember.Component.extend({
   }),
 
   actions: {
-    closeTicket(currentTicket) {
-      console.log("In the tile component, current: " + currentTicket);
-      this.sendAction('closeTicket', currentTicket)
+    closeTicket(ticket) {
+      console.log("In the tile component, current: " + ticket);
+      this.sendAction('closeTicket', ticket)
     },
   }
 });

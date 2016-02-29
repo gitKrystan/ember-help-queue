@@ -1,6 +1,6 @@
 <div class="row">
   {{#if isCurrentTicket}}
-    <button class='btn btn-default' {{action 'closeTicket' currentTicket}}>Figured It Out</button>
+    <button class='btn btn-default' {{action 'closeTicket' ticket}}>Figured It Out</button>
   {{else}}
     {{#if teacherView}}
       <button class='btn btn-default' {{action 'closeTicket' ticket}}>Close Ticket</button>

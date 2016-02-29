@@ -6,5 +6,6 @@ export default DS.Model.extend({
   issue: DS.attr(),
   openedAt: DS.attr(),
   closedAt: DS.attr(),
-  isOpen: DS.attr()
+  isOpen: DS.attr(),
+  closedBy: DS.attr()
 });
