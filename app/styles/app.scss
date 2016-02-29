@@ -1,1 +1,14 @@
 @import 'bootstrap';
+
+.ticketName {
+  @include make-md-column(11);
+}
+
+.ticketSeat {
+  @include make-md-column(1);
+}
+
+.ticketIssue {
+  @include make-md-column(12);
+  font-style: italic;
+}
