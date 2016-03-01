@@ -1,4 +1,21 @@
+$font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-brand: "Poiret One", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight: 300;
+
+$border-radius-base: 0;
+$border-radius-small: 0;
+$border-radius-large: 0;
+
+$brand-primary: #4DB6AC;
+$navbar-default-bg: $brand-primary;
+$navbar-default-toggle-border-color: $brand-primary;
+$navbar-default-link-color: white;
+$navbar-default-link-active-color: white;
+$navbar-default-toggle-icon-bar-bg: white;
+$navbar-default-toggle-hover-bg: transparent;
+
 @import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Roboto:400,300,700);
 
 .ticket-name {
   @include make-md-column(11);
@@ -23,4 +40,9 @@
 
 .is-current-ticket {
   background-color: pink;
+}
+
+.navbar-brand {
+  font-family: $font-family-brand;
+  font-size: 50px;
 }
