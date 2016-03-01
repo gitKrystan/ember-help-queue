@@ -17,10 +17,13 @@ export default Ember.Route.extend({
 
   actions: {
     closeTicket(ticket) {
+      var self = this;
       ticket.set('closedAt', Date.now());
       ticket.set('closedBy', 'teacher');
       ticket.set('isOpen', false);
-      ticket.save();
+      ticket.save().then(function() {
+        self.refresh();
+      });
     }
   }
 });
