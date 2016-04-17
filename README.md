@@ -1,7 +1,8 @@
-# Help-queue
+# Help Queue (Epicodus Help Queue clone)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### By Krystan Menne and Jeffrey Ruder
+
+This sample Ember.js allows users to put themselves in a help queue. Teachers can track how long students have been waiting for help and how many tickets were made that day.
 
 ## Prerequisites
 
@@ -25,29 +26,13 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
 ### Building
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### License
 
-Specify what it takes to deploy your app.
+Copyright (c) 2016 Krystan Menne and Jeffrey Ruder
 
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+This software is licensed under the MIT license.
